@@ -10,7 +10,7 @@ function toFactorial(number) {
     return 'Введите целое число от 1 до 170';
   } else if (number === 1) {
     return 1;
-  } else if (number > 1) {
+  } else (number > 1) {
     return number * toFactorial (number - 1);
   }
 }
