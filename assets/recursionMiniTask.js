@@ -3,14 +3,15 @@
 
 function toFactorial(number) {
   // debugger;
-  if (typeof(number) !== 'number') {
+  if (typeof(number) !== 'number' || isNaN(number)) {
     return 'Введите целое число от 1 до 170, свыше 170 результат ∞';
   }
-  if (number === 0) {
+  if (number === 0 || number < 0 || number > 10442) {
     return 'Введите целое число от 1 до 170';
-  } else if (number === 1) {
-    return 1;
-  } else (number > 1) {
+  } 
+  else if (number === 1) {
+    return 1;}
+  else (number > 1) 
     return number * toFactorial (number - 1);
-  }
 }
+
